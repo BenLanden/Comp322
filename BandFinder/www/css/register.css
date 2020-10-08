@@ -1,0 +1,56 @@
+﻿image {
+    position: absolute;
+    width: 142px;
+    height: 66px;
+    left: 117px;
+    top: 159px;
+}
+
+.fName {
+    position: absolute;
+    width: 112px;
+    height: 42px;
+    left: 68px;
+    top: 253px;
+}
+
+.lName {
+    position: absolute;
+    width: 114px;
+    height: 42px;
+    left: 194px;
+    top: 253px;
+}
+
+.email {
+    position: absolute;
+    width: 240px;
+    height: 42px;
+    left: 68px;
+    top: 308px;
+}
+
+.password {
+    position: absolute;
+    width: 240px;
+    height: 42px;
+    left: 68px;
+    top: 362px;
+}
+
+.cPassword {
+    position: absolute;
+    width: 240px;
+    height: 42px;
+    left: 68px;
+    top: 416px;
+}
+
+button {
+    position: absolute;
+    width: 152px;
+    height: 42px;
+    left: 112px;
+    top: 478px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+}
