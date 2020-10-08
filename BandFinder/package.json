@@ -1,0 +1,8 @@
+{
+    "name": "BandFinder",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "cordova-android": "5.2.1"
+    }
+}
