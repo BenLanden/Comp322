@@ -1,9 +1,24 @@
-﻿image {
+image {
     position: absolute;
     width: 142px;
     height: 66px;
     left: 117px;
     top: 159px;
+}
+
+h1 {
+    position: absolute;
+    width: 185px;
+    height: 42px;
+    left: 110px;
+    top: 290px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 33px;
+    /* identical to box height */
+    color: #000000;
 }
 
 .fName {
