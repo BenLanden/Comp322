@@ -1,0 +1,51 @@
+h1 {
+    position: absolute;
+    width: 85px;
+    height: 33px;
+    left: 143px;
+    top: 451px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+    color: #000000;
+}
+
+
+image {
+    position: absolute;
+    width: 142px;
+    height: 66px;
+    left: 113px;
+    top: 257px;
+
+    max-width: 100%;
+    height: auto;
+}
+
+.email {
+    position: absolute;
+    width: 240px;
+    height: 42px;
+    left: 68px;
+    top: 339px;
+}
+
+.password {
+    position: absolute;
+    width: 240px;
+    height: 42px;
+    left: 68px;
+    top: 392px;
+}
+
+button {
+    position: absolute;
+    width: 152px;
+    height: 42px;
+    left: 111.5px;
+    top: 454.5px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+}

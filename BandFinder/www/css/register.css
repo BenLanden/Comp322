@@ -6,6 +6,21 @@
     top: 159px;
 }
 
+h1 {
+    position: absolute;
+    width: 185px;
+    height: 42px;
+    left: 110px;
+    top:455px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 33px;
+    /* identical to box height */
+    color: #000000;
+}
+
 .fName {
     position: absolute;
     width: 112px;
