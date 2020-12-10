@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+.dropbtn2:hover, .dropbtn2:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput2 {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+#myInput2:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+.show2 {display: block;}
+
+h1 {
+    position: absolute;
+    width: 185px;
+    height: 42px;
+    left: 110px;
+    top: 400px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 33px;
+    /* identical to box height */
+    color: #000000;
+}
+
+</style>
+</head>
+<body>
+    <a href="homepage.html"><h1>Return Home</h1></a>
+    <img src="images/bandfinder_logo.png" />
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Search For Venues Using Your Location</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="#">Chicago</a>
+          <a href="#">Seattle</a>
+          <a href="#">Las Vegas</a>
+          <a href="#">Miami</a>
+          <a href="#">Kansas City</a>
+          <a href="#">Detroit</a>
+          <a href="#">New York</a>
+          <a href="#">Philadelphia</a>
+          <a href="#">San Francisco</a>
+          <a href="#">Salt Lake City</a>
+        </div>
+      </div>
+
+      <div class="dropdown2">
+        <button onclick="myFunction2()" class="dropbtn2">What Kind Of Venue Are You Looking For?</button>
+        <div id="myDropdown2" class="dropdown-content2">
+          <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction2()">
+          <a href="#">Concert</b>
+          <a href="#">Jam Session</b>
+          <a href="#">Studio Recording</b>
+          <a href="#">Understudy</b>
+        </div>
+      </div>
+
+      <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        function filterFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          div = document.getElementById("myDropdown");
+          a = div.getElementsByTagName("a");
+          for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+            } else {
+              a[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction2() {
+      document.getElementById("myDropdown2").classList.toggle("show2");
+    }
+    
+    function filterFunction2() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput2");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDropdown2");
+      a = div.getElementsByTagName("b");
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          a[i].style.display = "";
+        } else {
+          a[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+</body>
+</html>
