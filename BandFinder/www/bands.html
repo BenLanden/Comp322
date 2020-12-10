@@ -92,9 +92,17 @@
   display: block;
 }
 
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+.show2 {display: block;}
 </style>
 </head>
 <body>
@@ -119,16 +127,16 @@
       <div class="dropdown2">
         <button onclick="myFunction2()" class="dropbtn2">Search For Bands By Instrument</button>
         <div id="myDropdown2" class="dropdown-content2">
-          <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction()">
-          <a href="#">Bass</a>
-          <a href="#">Guitar</a>
-          <a href="#">Drums</a>
-          <a href="#">Lead Singer</a>
-          <a href="#">Backup Vocals</a>
-          <a href="#">Keyboard</a>
-          <a href="#">Violin</a>
-          <a href="#">Viola</a>
-          <a href="#">Cello</a>
+          <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction2()">
+          <a href="#">Bass</b>
+          <a href="#">Guitar</b>
+          <a href="#">Drums</b>
+          <a href="#">Lead Singer</b>
+          <a href="#">Backup Vocals</b>
+          <a href="#">Keyboard</b>
+          <a href="#">Violin</b>
+          <a href="#">Viola</b>
+          <a href="#">Cello</b>
         </div>
       </div>
 
@@ -160,15 +168,15 @@
     /* When the user clicks on the button,
     toggle between hiding and showing the dropdown content */
     function myFunction2() {
-      document.getElementById("myDropdown2").classList.toggle("show");
+      document.getElementById("myDropdown2").classList.toggle("show2");
     }
     
-    function filterFunction() {
+    function filterFunction2() {
       var input, filter, ul, li, a, i;
       input = document.getElementById("myInput2");
       filter = input.value.toUpperCase();
       div = document.getElementById("myDropdown2");
-      a = div.getElementsByTagName("a");
+      a = div.getElementsByTagName("b");
       for (i = 0; i < a.length; i++) {
         txtValue = a[i].textContent || a[i].innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
