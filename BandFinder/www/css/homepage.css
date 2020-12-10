@@ -4,57 +4,30 @@ h1 {
     width: 185px;
     height: 42px;
     left: 110px;
-    top: 290px;
+    top: 0px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 100px;
     line-height: 33px;
     /* identical to box height */
     color: #000000;
 }
 
-image {
-    position: absolute;
-    width: 142px;
-    height: 66px;
-    left: 113px;
-    top: 257px;
-
-    max-width: 100%;
-    height: auto;
+h6:before {
+    content:"• ";
 }
-
-.Name {
-    position: absolute;
-    width: 270px;
-    height: 42px;
-    left: 68px;
-    top: 300px;
+h7:before {
+    content:"• ";
 }
-
-.aName {
-    position: absolute;
-    width: 270px;
-    height: 42px;
-    left: 68px;
-    top: 339px;
+h8:before {
+    content:"• ";
 }
-
-.bName {
-    position: absolute;
-    width: 270px;
-    height: 42px;
-    left: 68px;
-    top: 392px;
+h9:before {
+    content:"• ";
 }
-
-.cName {
-    position: absolute;
-    width: 270px;
-    height: 42px;
-    left: 68px;
-    top: 445px;
+h10:before {
+    content:"• ";
 }
 
 h2 {
@@ -117,3 +90,77 @@ h5 {
     color: #000000;
 }
 
+h6 {
+    position: absolute;
+    width: 600px;
+    height: 19px;
+    left: 100px;
+    top: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+    color: #007423;
+}
+
+h7 {
+    position: absolute;
+    width: 600px;
+    height: 19px;
+    left: 100px;
+    top: 205px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+    color: #007423;
+}
+
+h8 {
+    position: absolute;
+    width: 600px;
+    height: 19px;
+    left: 100px;
+    top: 240px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+    color: #007423;
+}
+
+h9 {
+    position: absolute;
+    width: 600px;
+    height: 19px;
+    left: 100px;
+    top: 280px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+    color: #007423;
+}
+
+h10 {
+    position: absolute;
+    width: 600px;
+    height: 19px;
+    left: 100px;
+    top: 325px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+    color: #007423;
+}
